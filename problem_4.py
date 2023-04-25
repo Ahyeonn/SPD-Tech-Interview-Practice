@@ -11,6 +11,7 @@ def find_closest_sum_of_t(arr_1, arr_2, t):
     idx_of_arr_1 = 0
     idx_of_arr_2 = 0
 
+    #time complexity = N^2
     while count != len(arr_1):
         lst.append([arr_1[idx_of_arr_1], arr_2[idx_of_arr_2]])
         idx_of_arr_2 += 1
@@ -18,6 +19,7 @@ def find_closest_sum_of_t(arr_1, arr_2, t):
             idx_of_arr_2 = 0
             count += 1
             idx_of_arr_1 += 1
+    print(lst)
     
     diff = 10000
     indexing = 0
